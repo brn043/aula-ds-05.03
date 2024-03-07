@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: #282828;
+    color: #fff;
+    width: 100vw;
+    height: 20vh;
+}
+
+header nav{
+    width: 100vw;
+    height: 20vh;
+}
+
+@media screen and (min-width: 300px) {
+
+    
+    .links-block{
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    
+    .links-block a{
+        margin: 20px;
+    }
+    
+    .search-bar{
+        width: 100vw;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 80vw;
+        height: 50%;
+        margin-left: 10px;
+        margin-right: 0;
+        border: none;
+        padding-left: 20px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .search{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search button{
+        width: 20vw;
+        height: 50%;
+        margin-right: 10px;
+        border: none;
+        background-color: #fff;
+    }    
+
+    .links{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .links-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+    }
+
+    .search input{
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .search button{
+        width: 5vw;
+    }
+
+    .links-block #menu{
+        display: none;
+    }
+
+    .items-container{
+        width: 100vw;
+        height: 10vh;
+        background-color: #282828ea;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .items-container i{
+        margin: 10px;
+    }
+
+}

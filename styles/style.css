@@ -19,19 +19,82 @@
     height: 100%;
 }
 
-.login-block{
-    width: 50%;
-    height: 50%;
-    z-index: 10;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 7px 10px #ffffff94;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "p p" "i input" "p" "i input";
+@media screen and (min-width: 300px) {
+    .login-block{
+        width: 50%;
+        height: 50%;
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 7px 10px #ffffff94;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login-block p{
+        margin: 20px;
+    }
+    
+    .login-block input{
+        width: 40%;
+        height: 10%;
+    }
+
+    .login-block button{
+        width: 30%;
+        height: 15%;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin: 20px;
+        background-color: #fff;
+    }
+
+    .login-block p i{
+        margin-right: 5px;
+    }
 }
 
-.login-block input{
-    width: 40%;
-    height: 10%;
+@media screen and (min-width: 768px) {
+    .container{
+        align-items: flex-end;
+    }
+
+    .login-block{
+        width: 30%;
+        height: 100%;
+        z-index: 10;
+        background-color: #fff;
+        box-shadow: 0 7px 10px #ffffff94;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0%;
+    }
+    
+    .login-block p{
+        margin: 20px;
+        font-size: 22px;
+    }
+    
+    .login-block input{
+        width: 40%;
+        height: 5%;
+        margin: 3%;
+    }
+
+    .login-block button{
+        width: 30%;
+        height: 8%;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin: 20px;
+        background-color: #fff;
+    }
+
+    .login-block p i{
+        margin-right: 5px;
+    }   
 }
